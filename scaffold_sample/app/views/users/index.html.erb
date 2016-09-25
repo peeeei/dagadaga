@@ -1,0 +1,29 @@
+<!-- <p id="notice"><%= notice %></p> -->
+  <!-- main -->
+  <div class="col-md-9">
+    <pre id="main">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>名前</th>
+            <th>パスワード</th>
+            <th>年齢</th>
+            <th>性別</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @users.each do |user| %>
+          <tr>
+            <td><%= user.name %></td>
+            <td><%= user.pass %></td>
+            <td><%= user.age %></td>
+            <td><%= user.sex %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+  </pre>
+  </div>
+</div>
+<br>

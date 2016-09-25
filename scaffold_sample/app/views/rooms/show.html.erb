@@ -1,0 +1,23 @@
+<div class="chat-header">
+  <p><strong>chat room</strong></p>
+</div>
+
+<div class="chat-main">
+  <div id="messages">
+      <%= render @messages %>
+  </div>
+</div>
+
+<div class="chat-footer">
+  <form>
+      <label>Say something:</label><br>
+      <input id="chat_input" type="text" data-behavior="room_speaker">
+  </form>
+</div>
+
+<%= javascript_tag do %>
+    $('#main').animate(
+      {scrollTop:
+        $('#main')[0].scrollHeight
+      }, 0);
+<% end %>

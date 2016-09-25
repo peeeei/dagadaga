@@ -1,0 +1,40 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+html{
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  // padding:0; この場合はヘッダーと重なってしまうため指定しない。
+  overflow:hidden;
+}
+#header{
+  // position: absolute;
+}
+#leftmenu{
+  // position: absolute;
+  height: 100vh;
+  overflow:scroll;
+  margin:0;
+  padding:0;
+}
+#main{
+  // position: absolute;
+  height: 100vh;
+  // overflow:scroll;
+  margin:0;
+  padding:0;
+}
+#nav {
+    pointer-events: none;
+}
+// .row.row-0{
+//   // position: absolute;
+//   // margin:0;
+//   // padding:0;
+// }
+.col-md-3{ margin: 0; padding-top: 52px; }
+.col-md-9{ margin: 0; padding: 0; }
